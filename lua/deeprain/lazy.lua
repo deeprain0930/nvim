@@ -27,5 +27,10 @@ if not status_ok then
   return
 end
 
-lazy.setup("deeprain.plugins")
+lazy.setup({
+    { import = "deeprain.plugins"},
+    { import = "deeprain.plugins.lsp"},
+})
+--lazy.setup("deeprain.plugins.lsp")
 -- require("lazy").setup({})
+

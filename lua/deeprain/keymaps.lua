@@ -18,6 +18,8 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+
 -- Normal --
 -- Better window navigation
 -- 切换窗口
