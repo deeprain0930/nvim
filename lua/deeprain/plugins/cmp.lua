@@ -72,7 +72,7 @@ return {
                 { name = "buffer" },
                 { name = "path" },
             }),
-            formatting = {
+            formatting = ({
                 fields = { "kind", "abbr", "menu" },
                 format = function(entry, vim_item)
                   -- Kind icons
@@ -85,7 +85,7 @@ return {
                   })[entry.source.name]
                   return vim_item
                 end,
-            }
+            })
         })
 
         vim.cmd([[
